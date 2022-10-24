@@ -1,0 +1,27 @@
+.Accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #98ea7a;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transform: scale(100%);
+    transition: 0.1s ease-in;
+}
+
+.mainHide {
+    z-index: -9;
+    transform: scale(0%);
+    opacity: 0;
+}

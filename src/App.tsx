@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Rating} from "./components/ui/Rating/Rating";
+import {Accordion} from "./components/ui/Accordion/Accordion";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+
+    return (
+        <div className='app'>
+            <Rating/>
+
+            <Accordion className='testList'>
+                <ul>
+                    <li>One li</li>
+                    <li>Two li</li>
+                    <li>Three li</li>
+                </ul>
+
+                <ul>
+                    <li>One li</li>
+                    <li>Two li</li>
+                    <li>Three li</li>
+                </ul>
+            </Accordion>
+
+            <Accordion>
+                Hello World
+            </Accordion>
+        </div>
+    )
 }
-
-export default App;
