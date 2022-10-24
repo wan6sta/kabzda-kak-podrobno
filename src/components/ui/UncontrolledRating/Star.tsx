@@ -19,7 +19,8 @@ export const Star: FC<StarProps> = (props) => {
         height: '25px',
         borderRadius: '50%',
         cursor: 'pointer',
-        backgroundColor: isActive ? '#20f79b' : 'white'
+        backgroundColor: isActive ? '#20f79b' : 'white',
+        transition: '.1s ease-in'
     }), [isActive])
 
     return (

@@ -1,0 +1,20 @@
+.stars {
+    display: flex;
+    column-gap: 5px;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.starSelected {
+    background-color: #f88923;
+}
