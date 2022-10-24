@@ -9,7 +9,7 @@ interface AccordionProps {
 export const Accordion: FC<PropsWithChildren<AccordionProps>> = (props) => {
     const {children, className} = props
 
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
 
     const showHandler = () => {
         setShow(prev => !prev)
@@ -25,7 +25,7 @@ export const Accordion: FC<PropsWithChildren<AccordionProps>> = (props) => {
             </button>
 
             <div
-                className={classNames(cls['main'], className, {[`${cls.mainHide}`]: !show})}
+                className={classNames(cls.main, className, {[cls.mainHide]: !show})}
             >
                 {children}
             </div>
