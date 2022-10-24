@@ -22,12 +22,16 @@ export const Rating = () => {
 
     const ratingStyle = useMemo(() => ({
         display: 'flex',
+        alignItems: 'center',
         columnGap: '5px'
     }), [])
+
+    const ratingLenght = useMemo(() => ratingList.filter(item => item).length, [ratingList])
 
     return (
         <div style={ratingStyle}>
             {stars}
+            <span>{ratingLenght}</span>
         </div>
     )
 }
